@@ -19,7 +19,7 @@ setup(
     maintainer='koppechan90',
     maintainer_email='s21C1104DW@s.chibakoudai.jp',
     description='TODO: a package for practice',
-    license='TODO: BSD-3-Clause',
+    license='BSD-3-Clause',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
