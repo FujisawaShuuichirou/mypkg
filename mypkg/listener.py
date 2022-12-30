@@ -4,8 +4,12 @@ from std_msgs.msg import Int16
 
 def cb(msg):
     global node
-    node.get_logger().info("Listen: %d" % msg.data)
+    global doub
+    #node.get_logger().info("Listen: %d" % msg.data)
+    doub += msg.data
+    print(doub)
 
+doub = 0
 rclpy.init()
 node = Node("listener")
 pub = node.create_subscription(Int16, "countup", cb, 10)
