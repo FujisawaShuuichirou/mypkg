@@ -38,8 +38,8 @@
   [INFO] [1672501851.232465400] [listener]: Listen: 8
   [INFO] [1672501851.733883800] [listener]: Listen: 9
   [INFO] [1672501852.233563900] [listener]: Listen: 10
-
   ```
+
 ## tra_talker tra_listener
 
 * tra_talker   : 標準入力から文字を読み込み、translationという流路を使いtra_listenerにString型のメッセージを送る。
@@ -47,7 +47,6 @@
 
 * 使用例
   ```
-
   $ ros2 run mypkg tra_talker
 　arigatougozaimasu
 　ohayou
@@ -65,8 +64,8 @@
 　ったぷ
 　たっぷ
 　ぱいなっぷる
-
   ```
+
 ## 必要なソフトウェア
 * Python
 * ROS2
