@@ -44,9 +44,8 @@
 
 * tra_talker   : 標準入力から文字を読み込み、translationという流路を使いtra_listenerにString型のメッセージを送る。
 * tra_listener : tra_talkerから送られてきたアルファベットを対応するひらがなに変換する。
-
 * 使用例
-　```
+　````
 
   $ ros2 run mypkg tra_talker
 　arigatougozaimasu
