@@ -13,8 +13,7 @@ class Talker():
 
     def cb(self):
         msg = String()
-        #msg.data = input()
-        msg.data = 'konbanhaasitamoyorosikuonegaisimasu'
+        msg.data = input()
         self.pub.publish(msg)
         self.n += 1
 

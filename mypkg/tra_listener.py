@@ -598,6 +598,6 @@ def cb(msg):
     print(result.replace(' ', ''))
 
 rclpy.init()
-node = Node("test_listener")
+node = Node("tra_listnener")
 pub = node.create_subscription(String, "translation", cb, 10)
 rclpy.spin(node)
