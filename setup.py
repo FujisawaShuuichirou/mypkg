@@ -25,8 +25,8 @@ setup(
         'console_scripts': [
             'talker = mypkg.talker:main',
             'listener = mypkg.listener:main',
-            #'test_talker = mypkg.test_talker:main',
-            'tra_talker = mypkg.tra_talker:main',
+            'test_talker = mypkg.test_talker:main',
+            #'tra_talker = mypkg.tra_talker:main',
             'tra_listener = mypkg.tra_listener:main',
         ],
     },
