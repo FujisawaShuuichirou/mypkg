@@ -5,7 +5,7 @@ from std_msgs.msg import String
 def cb(msg):
     global node
     #node.get_logger().info("Listen: %s" % msg.data)
-    print(msg.data)
+    #print(msg.data)
     #print(len(msg.data))
     hoge = []
     count = 0 
