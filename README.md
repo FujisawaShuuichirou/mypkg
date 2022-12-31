@@ -1,8 +1,8 @@
 # ノード
 * talker       : 0から1ずつカウントアップしたものをlistenerに送る。
 * listener     : talker から送られてきたものを表示する。
-* tratalker   : 標準入力からアルファベットを読み込みtralistenerに送る。
-* tralistener : tratalkerから送られてきたアルファベットを対応するひらがなに変換する。
+* tra_talker   : 標準入力からアルファベットを読み込みtra_listenerに送る。
+* tra_listener : tra_talkerから送られてきたアルファベットを対応するひらがなに変換する。
 
 ![test](https://github.com/FujisawaShuuichirou/mypkg/actions/workflows/test.yml/badge.svg)
 
@@ -17,9 +17,8 @@
 
 ## talker　listener
      
-* talker   : 数を0から1ずつカウントアップし、countupという流路を使いlistenerにInt16型のメッセージを送る。
-* listener : talker から送られてきたものを表示する。
-
+talker   : 数を0から1ずつカウントアップし、countupという流路を使いlistenerにInt16型のメッセージを送る。
+listener : talker から送られてきたものを表示する。
 * 使用例
   ```
   $ ros2 run mypkg talker
@@ -38,14 +37,15 @@
   [INFO] [1672501851.232465400] [listener]: Listen: 8
   [INFO] [1672501851.733883800] [listener]: Listen: 9
   [INFO] [1672501852.233563900] [listener]: Listen: 10
-  ```
-## tratalker tralistener
 
-* tratalker   : 標準入力から文字を読み込み、translationという流路を使いtralistenerにString型のメッセージを送る。
-* tralistener : tratalkerから送られてきたアルファベットを対応するひらがなに変換する。
+  ```
+## tra_talker tra_listener
+
+tra_talker   : 標準入力から文字を読み込み、translationという流路を使いtra_listenerにString型のメッセージを送る。
+tra_listener : tra_talkerから送られてきたアルファベットを対応するひらがなに変換する。
+
 * 使用例
-  ```
-
+　```
   $ ros2 run mypkg tra_talker
 　arigatougozaimasu
 　ohayou
@@ -63,9 +63,8 @@
 　ったぷ
 　たっぷ
 　ぱいなっぷる
+
   ```
-
-
 ## 必要なソフトウェア
 * Python
 * ROS2
