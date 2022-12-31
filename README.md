@@ -19,9 +19,9 @@
      
 * talker   : 数を0から1ずつカウントアップし、countupという流路を使いlistenerにInt16型のメッセージを送る。
 * listener : talker から送られてきたものを表示する。
+
 * 使用例
   ```
-
   $ ros2 run mypkg talker
 
   もう一つ端末を開いて
@@ -38,14 +38,13 @@
   [INFO] [1672501851.232465400] [listener]: Listen: 8
   [INFO] [1672501851.733883800] [listener]: Listen: 9
   [INFO] [1672501852.233563900] [listener]: Listen: 10
-    
   ```
 ## tra_talker tra_listener
 
 * tra_talker   : 標準入力から文字を読み込み、translationという流路を使いtra_listenerにString型のメッセージを送る。
 * tra_listener : tra_talkerから送られてきたアルファベットを対応するひらがなに変換する。
 * 使用例
-　````
+  ```
 
   $ ros2 run mypkg tra_talker
 　arigatougozaimasu
