@@ -40,32 +40,6 @@
   [INFO] [1672501852.233563900] [listener]: Listen: 10
   ```
 
-## tra_talker tra_listener
-
-* tra_talker   : 標準入力から文字を読み込み、translationという流路を使いtra_listenerにString型のメッセージを送る。
-* tra_listener : tra_talkerから送られてきたアルファベットを対応するひらがなに変換する。
-
-* 使用例
-  ```
-  $ ros2 run mypkg tra_talker
-　arigatougozaimasu
-　ohayou
-　tarako
-　ttapu
-　tappu
-　painappuru
-
-  もう一つ端末を開いて
-
-  $ ros2 run mypkg tra_listener
-　ありがとうございます
-　おはよう
-　たらこ
-　ったぷ
-　たっぷ
-　ぱいなっぷる
-  ```
-
 ## 必要なソフトウェア
 * Python
 * ROS2
