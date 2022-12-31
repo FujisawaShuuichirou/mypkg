@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2022 Shuichiro Fujisawa
+# SPDX-License-Identifier: BSD-3-Clause
+
 from launch import LaunchDescription
 from launch_ros.actions import Node
 #import launch.actions

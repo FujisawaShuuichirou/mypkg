@@ -1,57 +1,77 @@
-
-
-# コマンド
-* plus     : 足し算
-* prime    : 素数出力
-* judge    : 素数判定
-* analysis : 素因数分解
-
-![test](https://github.com/FujisawaShuuichirou/robosys2022/actions/workflows/test.yml/badge.svg)
+# ノード
+* talker       :0から1ずつカウントアップしたものをlistenerに送る。
+* listener     :talker から送られてきたものを表示する。
+* tra_talker   :標準入力からアルファベットを読み込みtra_listenerに送る。
+* tra_listener :tra_talkerから送られてきたアルファベットを対応するひらがなに変換する。
+![test](https://github.com/FujisawaShuuichirou/mypkg/actions/workflows/test.yml/badge.svg)
 
 ## ダウンロード方法
-
 * 以下を端末で実行する
   ```
 
-  $ git clone https://github.com/FujisawaShuuichirou/robosys2022.git
-  $ cd robosys_2022
+  $ git clone https://github.com/FujisawaShuuichirou/mypkg.git
+  $ cd mypkg
 
   ```
 
-## plusコマンド
-標準入力から読み込んだ数を足し合わせる。
-
+## talker　listener
+     
+talker   :数を0から1ずつカウントアップし、countupという流路を使いlistenerにInt16型のメッセージを送る。
+listener :talker から送られてきたものを表示する。
 * 使用例
   ```
-  #例1
-  /robosys2022$ echo 1 2 3 4 5 > nums
-  /robosys2022$ cat nums | tr ' ' '\n' | ./plus
-  15.0
+  $ ros2 run mypkg talker
 
-  #例2
-  /robosys2022$ seq 5 | ./plus
-  15.0
-  ```
+  '''
+  もう一つ端末を開いて
+  '''
 
-## analysisコマンド
+  $ ros2 run mypkg listener
+  [INFO] [1672501847.234085000] [listener]: Listen: 0
+  [INFO] [1672501847.733796800] [listener]: Listen: 1
+  [INFO] [1672501848.234175000] [listener]: Listen: 2
+  [INFO] [1672501848.734066600] [listener]: Listen: 3
+  [INFO] [1672501849.232931000] [listener]: Listen: 4
+  [INFO] [1672501849.733842700] [listener]: Listen: 5
+  [INFO] [1672501850.233608900] [listener]: Listen: 6
+  [INFO] [1672501850.733801900] [listener]: Listen: 7
+  [INFO] [1672501851.232465400] [listener]: Listen: 8
+  [INFO] [1672501851.733883800] [listener]: Listen: 9
+  [INFO] [1672501852.233563900] [listener]: Listen: 10
 
-標準入力から読み込んだ数を素因数分解する。
+  '''
+## tra_talker tra_listener
+
+tra_talker   :標準入力から文字を読み込み、translationという流路を使いtra_listenerにString型のメッセージを送る。
+tra_listener :tra_talkerから送られてきたアルファベットを対応するひらがなに変換する。
 
 * 使用例
-  ```
-  /robosys2022$ echo 54 100 759 > nums
-  /robosys2022$ cat nums | tr ' ' '\n' | ./analysis
-  54
-  =[[2, '^1'], [3, '^3']]
-  100
-  =[[2, '^2'], [5, '^2']]
-  759
-  =[[3, '^1'], [11, '^1'], [23, '^1']]
-  ```
 
+　```
+  $ ros2 run mypkg tra_talker
+　arigatougozaimasu
+　ohayou
+　tarako
+　ttapu
+　tappu
+　painappuru
+
+  '''
+  もう一つ端末を開いて
+  '''
+
+  $ ros2 run mypkg tra_listener
+　ありがとうございます
+　おはよう
+　たらこ
+　ったぷ
+　たっぷ
+　ぱいなっぷる
+
+  '''
 ## 必要なソフトウェア
 * Python
-  * テスト済み: 3.7〜3.10
+* ROS2
 
 ## テスト環境
 * Ubuntu 20.04 on WSL
