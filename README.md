@@ -40,7 +40,6 @@
   [INFO] [1672501852.233563900] [listener]: Listen: 10
 
   ```
-  ```
 ## tra_talker tra_listener
 
 * tra_talker   : 標準入力から文字を読み込み、translationという流路を使いtra_listenerにString型のメッセージを送る。
