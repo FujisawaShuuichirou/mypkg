@@ -18,13 +18,15 @@ setup(
     zip_safe=True,
     maintainer='koppechan90',
     maintainer_email='s21C1104DW@s.chibakoudai.jp',
-    description='TODO: a package for practice',
+    description='a package for practice',
     license='BSD-3-Clause',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
             'talker = mypkg.talker:main',
             'listener = mypkg.listener:main',
+            'test_talker = mypkg.test_talker:main',
+            'test_listener = mypkg.test_listener:main',
         ],
     },
 )
