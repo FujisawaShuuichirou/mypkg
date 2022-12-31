@@ -46,7 +46,7 @@
 * tra_listener : tra_talkerから送られてきたアルファベットを対応するひらがなに変換する。
 
 * 使用例
-　```
+  ```
   $ ros2 run mypkg tra_talker
 　arigatougozaimasu
 　ohayou
