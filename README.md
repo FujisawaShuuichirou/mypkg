@@ -9,9 +9,28 @@
 ## ダウンロード方法
 * 以下を端末で実行する
   ```
-  $ git cloe https://github.com/FujisawaShuuichirou/mypkg.git
-  $ cd mypkg
+  $ git clone https://githCub.com/FujisawaShuuichirou/mypkg.git
   ```
+
+## パッケージのビルド
+* ビルド作業
+  ```
+  $ pwd
+  /home/~/ros2_ws/src  #現在のディレクトリの確認
+  $ cd ../             #~/ros2_wsへ移動
+  $ colcon build
+  ```
+* ros2_ws下のパッケージを利用可能にする
+  * ~/.bahsrcの末尾に下の二行を追加
+ ```
+ source ~/ros2_ws/install/setup.bash
+ source ~/ros2_ws/install/local_setup.bash
+ ```
+  * sourceする
+ ```
+ $ source ~/.bashrc
+ ```
+
 
 ## talker listener
 
