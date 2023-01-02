@@ -66,7 +66,7 @@
   ```
   $ ros2 run mypkg tra_listener
 
-  もう一つ端末を開いて
+  もう一つ端末を開いて以下のものを入力する。
 
   $ ros2 run mypkg tra_talker
   konbanha
@@ -76,7 +76,7 @@
   gakuseinokoroniganbattakotohanandesuka
   hogehoge
 
-  変換後のtra_listener側の端末
+  変換後のtra_listener側の端末の表示
 
   $ ros2 run mypkg tra_listener
   こんばんは
