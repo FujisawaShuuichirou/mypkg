@@ -63,7 +63,11 @@
 * tra_listener : translationから受けっとたアルファベットを対応するひらがなに変換し画面に表示する。
 
 * 使用例
-  ```
+  ````
+  $ ros2 run mypkg tra_listener
+
+  もう一つ端末を開いて
+
   $ ros2 run mypkg tra_talker
   konbanha
   sayounara
@@ -72,7 +76,9 @@
   gakuseinokoroniganbattakotohanandesuka
   hogehoge
 
-  もう一つ端末を開いて
+  ``` 
+　変換後
+  # tra_sistener側の端末
 
   $ ros2 run mypkg tra_listener
   こんばんは
@@ -82,6 +88,7 @@
   がくせいのころにがんばったことはなんですか
   ほげほげ
   ```
+  ````
 
 ## 必要なソフトウェア
 * Python
