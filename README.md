@@ -60,7 +60,7 @@
 ## tra_talker tra_listener
 
 * tra_talker   : 標準入力からアルファベットを読み込みString型のメッセージでtranslationを通じて送信する。
-* tra_listener : translationから受けっとたアルファベットを対応するひらがなに変換する。
+* tra_listener : translationから受けっとたアルファベットを対応するひらがなに変換し画面に表示する。
 
 * 使用例
   ```
