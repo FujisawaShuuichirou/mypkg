@@ -38,10 +38,10 @@
   [INFO] [1672501852.233563900] [listener]: Listen: 10
   ```
 
-## talker listener
+## tra_talker tra_listener
 
-* talker   : 0から1ずつカウントアップしたものをInt16型のメッセージをcountupを通じて送信する。
-* listener : countupからメッセージをもらって表示する。
+* tra_talker   : 0から1ずつカウントアップしたものをInt16型のメッセージをcountupを通じて送信する。
+* tra_listener : countupからメッセージをもらって表示する。
 
 * 使用例
   ```
