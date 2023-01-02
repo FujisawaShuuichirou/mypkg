@@ -1,24 +1,47 @@
 # ノード
-* talker       : 0から1ずつカウントアップしたものをlistenerに送る。
-* listener     : talker から送られてきたものを表示する。
-* tra_talker   : 標準入力からアルファベットを読み込みtra_listenerに送る。
-* tra_listener : tra_talkerから送られてきたアルファベットを対応するひらがなに変換する。
+* talker       : 0から1ずつカウントアップしたものをInt16型のメッセージをcountupを通じて送信する。
+* listener     : countupからメッセージをもらって表示する。
+* tra_talker   : 標準入力からアルファベットを読み込みString型のメッセージをtranslationを通じて送信する。
+* tra_listener : translationから受けっとたアルファベットを対応するひらがなに変換する。
 
 ![test](https://github.com/FujisawaShuuichirou/mypkg/actions/workflows/test.yml/badge.svg)
 
 ## ダウンロード方法
 * 以下を端末で実行する
   ```
-
-  $ git clone https://github.com/FujisawaShuuichirou/mypkg.git
+  $ git cloe https://github.com/FujisawaShuuichirou/mypkg.git
   $ cd mypkg
-
   ```
 
 ## talker listener
 
-* talker   : 数を0から1ずつカウントアップし、countupという流路を使いlistenerにInt16型のメッセージを送る。
-* listener : talker から送られてきたものを表示する。
+* talker   : 0から1ずつカウントアップしたものをInt16型のメッセージをcountupを通じて送信する。
+* listener : countupからメッセージをもらって表示する。
+
+* 使用例
+  ```
+  $ ros2 run mypkg talker
+
+  もう一つ端末を開いて
+
+  $ ros2 run mypkg listener
+  [INFO] [1672501847.234085000] [listener]: Listen: 0
+  [INFO] [1672501847.733796800] [listener]: Listen: 1
+  [INFO] [1672501848.234175000] [listener]: Listen: 2
+  [INFO] [1672501848.734066600] [listener]: Listen: 3
+  [INFO] [1672501849.232931000] [listener]: Listen: 4
+  [INFO] [1672501849.733842700] [listener]: Listen: 5
+  [INFO] [1672501850.233608900] [listener]: Listen: 6
+  [INFO] [1672501850.733801900] [listener]: Listen: 7
+  [INFO] [1672501851.232465400] [listener]: Listen: 8
+  [INFO] [1672501851.733883800] [listener]: Listen: 9
+  [INFO] [1672501852.233563900] [listener]: Listen: 10
+  ```
+
+## talker listener
+
+* talker   : 0から1ずつカウントアップしたものをInt16型のメッセージをcountupを通じて送信する。
+* listener : countupからメッセージをもらって表示する。
 
 * 使用例
   ```
