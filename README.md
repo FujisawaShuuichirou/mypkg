@@ -1,7 +1,7 @@
 # ノード
-* talker       : 0から1ずつカウントアップしたものをInt16型のメッセージをcountupを通じて送信する。
+* talker       : 0から1ずつカウントアップしたものをInt16型のメッセージでcountupを通じて送信する。
 * listener     : countupからメッセージをもらって表示する。
-* tra_talker   : 標準入力からアルファベットを読み込みString型のメッセージをtranslationを通じて送信する。
+* tra_talker   : 標準入力からアルファベットを読み込みString型のメッセージでtranslationを通じて送信する。
 * tra_listener : translationから受けっとたアルファベットを対応するひらがなに変換する。
 
 ![test](https://github.com/FujisawaShuuichirou/mypkg/actions/workflows/test.yml/badge.svg)
@@ -34,7 +34,7 @@
 
 ## talker listener
 
-* talker   : 0から1ずつカウントアップしたものをInt16型のメッセージをcountupを通じて送信する。
+* talker   : 0から1ずつカウントアップしたものをInt16型のメッセージでcountupを通じて送信する。
 * listener : countupからメッセージをもらって表示する。
 
 * 使用例
@@ -59,7 +59,7 @@
 
 ## tra_talker tra_listener
 
-* tra_talker   : 標準入力からアルファベットを読み込みString型のメッセージをtranslationを通じて送信する。
+* tra_talker   : 標準入力からアルファベットを読み込みString型のメッセージでtranslationを通じて送信する。
 * tra_listener : translationから受けっとたアルファベットを対応するひらがなに変換する。
 
 * 使用例
