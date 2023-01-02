@@ -21,15 +21,15 @@
   $ colcon build
   ```
 * ros2_ws下のパッケージを利用可能にする
-  * ~/.bahsrcの末尾に下の二行を追加
- ```
- source ~/ros2_ws/install/setup.bash
- source ~/ros2_ws/install/local_setup.bash
- ```
-   * sourceする
- ```
- $ source ~/.bashrc
- ```
+  ````
+  ```
+  #~/.bahsrcの末尾に下の二行を追加
+  source ~/ros2_ws/install/setup.bash
+  source ~/ros2_ws/install/local_setup.bash
+  ```
+
+  $ source ~/.bashrc
+  ````
 
 
 ## talker listener
