@@ -13,10 +13,8 @@ timeout 10 ros2 launch mypkg talk_listen.launch.py > /tmp/mypkg.log
 cat /tmp/mypkg.log |
 grep 'Listen: 10'
 
-#gnome-terminal ros2 run mypkg tra_listener > /tmp/mypkg.log
-#timeout 5 ros2 run mypkg test_talker
-#timeout 5 ros2 run mypkg tra_listener > /tmp/mypkg.log
+timeout 120 ros2 launch mypkg tra_talk_listen.launch.py > /tmp/mypkg2.log
 
-#cat /tmp/mypkg.log |
-#grep 'こんばんはあしたもよろしくおねがいします'
+cat /tmp/mypkg2.log |
+grep 'こんばんはあしたもよろしくおねがいします'
 
