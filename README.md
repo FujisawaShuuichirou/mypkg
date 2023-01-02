@@ -9,7 +9,7 @@
 ## ダウンロード方法
 * 以下を端末で実行する
   ```
-  $ git clone https://githCub.com/FujisawaShuuichirou/mypkg.git
+  $ git clone https://github.com/FujisawaShuuichirou/mypkg.git
   ```
 
 ## パッケージのビルド
