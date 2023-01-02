@@ -76,9 +76,6 @@
   gakuseinokoroniganbattakotohanandesuka
   hogehoge
 
-　変換後
-  # tra_sistener側の端末
-
   $ ros2 run mypkg tra_listener
   こんばんは
   さようなら
